@@ -39,7 +39,6 @@ async function main(): Promise<void> {
 
     let deployedAddress = await deployContract(
       deployerContract,
-      // otpFactory,
       ethers.utils.keccak256(ethers.utils.toUtf8Bytes(VERSION)),
       deployTx.data,
     );

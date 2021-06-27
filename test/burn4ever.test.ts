@@ -4,7 +4,7 @@ import { solidity } from "ethereum-waffle";
 import { Burn4Ever__factory } from "../typechain";
 import { deployContract, VERSION } from "../src/deploy";
 import { deployDeployer } from "../src/deployer";
-import { Contract, ContractFactory } from "ethers";
+import { Contract } from "ethers";
 
 chai.use(solidity);
 const { expect } = chai;
@@ -12,11 +12,6 @@ const { expect } = chai;
 describe("Test burn forever contract", () => {
   let deployerContract: Contract;
 
-  // beforeEach(async () => {
-  //   const [deployer] = await ethers.getSigners();
-  //   deployerContract = await deployDeployer(deployer);
-  //   console.log("Deployer contract address", deployerContract.address);
-  // });
   describe("Pay", async () => {
     it("Should burn the eth forever", async () => {
       const [deployer, payer] = await ethers.getSigners();
