@@ -3,7 +3,7 @@
 Do you _really_ want to burn some ETH?
 
 Sending it to
-`0x0000000000000000000000000000000000000000` or `0x000000000000000000000000000000000000dEaD` is a popular choice, but the ETH is not _really_ burned.
+`0x0000000000000000000000000000000000000000` or `0x000000000000000000000000000000000000dEaD` is a popular choice, but the ETH is not _really_ burned. There is technically a private key with access to the funds, its just that no one knows it (probably).
 
 Of course, there is practically 0 chance of anyone ever finding the private key to these addresses, but if some does... it's a lot of ETH to dump on the market.
 
